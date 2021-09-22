@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel= "stylesheet" href = "/css/normalize.css"> <!--las librerias van antes que la hoja de estilo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98eaad93ae.js" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" href = "/css/style.css">
+    
+   
+</head>
+<body> 
+  <header class="main-header">
+   <div class="conteint">
+      <div class="main-header-top-bar"> 
+        <div>
+          <img src="/images/logo-mercado-liebre.svg" class="logo">
+        </div>
+      <form>
+         <div class="barra">
+           <input type="text" nombre="search-bar" placeholder="Buscar productos,marcas y mas" class="search-bar-bar">   
+           <button type="submit" class="botton-form">Buscar</button<i class="fas fa-search"></i> ><!--cuando le doy click a la lupa se ma hace un tilde en la barra de busqueda-->
+         </div>
+        </form>
+      </div>
+         <div>
+          <h2 class="copy-header">
+           <i class="fas fa-hand-holding-usd"></i>
+           Compra en cuotas y sin tarjeta de credito</h2>
+          </div>
+      
+    </div>
+         <!--barra de navegacion-->
+         <nav class="main-navbar">
+          <ul>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        
+           <ul>
+            <li><a href="#">Crae tu cuenta <i class="fab fa-cc-visa"></i></a></li> 
+            <li><a href="#">Ingresa</a> <i class="fas fa-search-plus"></i></li>
+            <li><a href="#"> Mas Ofertas</a> <i class="fas fa-shopping-basket"></i></li> 
+           </ul>
+         </nav>
+         <!--logo de hamburger-->
+         <a href="#" class="hamburger-button">
+            <i class="fas fa-bars mini" ></i> 
+           </a>
+  </header>
+  <form action="/register" method="POST" class="create-form">
+    <div class="control-formulario">
+     <label></label>
+     <input type="text" name="nombre" placeholder="Nombre y Apellido" class="control" required> <!--el atibuto name es de para una mejor identificacion del Backend-->
+    </div>
+    <div class="control-formulario">
+      <label></label>
+      <input type="text" name="precio" placeholder="Nombre del Usuario" class="control" required minlength="3" maxlength="10">
+     </div>
+     <div class="control-formulario">
+        <label></label>
+        <input type="email" name="precio" placeholder="E-mail" class="control" required> <!--el required es para que si no le pones info al input te lo dice-->
+       </div>
+       <div class="control-formulario">
+        <label></label>
+        <input type="date" name="fecha"  class="control">
+       </div>
+       <div class="control-formulario">
+        <label></label>
+        <input type="text" name="domicilio" placeholder="Domicilio"  class="control">
+       </div>
+       <div class="control-formulario">
+        <label for="compradorid">Comprador</label><input type="radio" name="perfil" value="Comprador" id="compradorid">
+        <label for="vendedorid">Vendedor</label><input type="radio" name="perfil" value="Vendedor" id="vendedorid">
+       </div>
+       <div class="control-formulario"> <!--este campo contiene el menu desplegable-->
+         <label>Intereses</label> 
+          <select name="categoria" class="control"> <!--el name es solo para el Backend-->
+           <option value="Hogar">Hogar</option> <!--el value es para q el backend identifique de que se trata-->
+           <option value="electro">Electro</option>
+           <option value="indumentaria">Moda</option>
+           <option value="indumentaria">Jugueteria</option>
+           <option value="indumentaria">Vida Sana</option>
+          </select>
+          <div class="control-formulario">
+            <label></label>
+            <input type="file" name="load-file"  class="control">
+           </div>
+          <div class="control-formulario">
+            <label></label>
+            <input type="password" name="contrasena" placeholder="Contraseña" class="control">
+           </div>
+           <div class="control-formulario">
+            <label></label>
+            <input type="password" name="confirma tu contrasena" placeholder="Confirma tu Contraseña" class="control">
+           </div>
+       </div>
+      
+     
+     
+     <button type="reset" class="botton-form">Borrar</button> <!--aca van los botones-->
+     <button type="submit" class="botton-form">Enviar</button>
+  </form>
+    
+      <!--empezando con el pie de pagina-->
+    <footer>
+     <div class="footer">
+         <section>
+            <i class="fab fa-cc-visa visa" ></i>
+            <h3 class="footer-h3">Pagá con tarjeta o en efectivo</h3>
+            <p class="credit">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo enpuntos de pago. ¡Y siempre es seguro!</p>
+         </section>
+
+        <section>
+         <i class="fas fa-shopping-basket compra"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+
+        <section>
+         <i class="fas fa-user-shield seguridad" ></i>
+            <h3>Seguridad de principio a fin</h3>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,porque estás siempre protegid@.</p>
+        </section>
+
+        <section> <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p></section>
+
+     </div>
+    </footer>
+</body>
+</html>
