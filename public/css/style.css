@@ -97,7 +97,7 @@ main section div i{
  
 }
 h3{
-    font-size: 24px;
+    font-size: 15px;
 }
 .precio{
     flex-grow: 3;/* se aplica sobre cada item, es como que le estoy dando el 30% de participacion*/
@@ -108,7 +108,6 @@ h3{
     font-size: 16px;
 }
 .descripcion{
-   text-align: center;
     font-size: 16px;
 }
 /*FORMULARIO*/
@@ -139,42 +138,64 @@ h3{
     font-style: oblique;
     color: #FFFF;
     border-radius: 5px;
-    
+}
+.botton-form-login:hover{
+background-color: #0022AA;
+}
+.botton-form-login {
+    background-color:blueviolet;
+    border: none;
+    padding: 5px 10px;
+    font-style: oblique;
+    color: #FFFF;
+    border-radius: 5px;
+    width: 50%;
 }
 /* pie de pagina*/
-.footer{
+.footer-conteint{
     background-color:#EAC926;
+}
+
+.footer{
     text-align: center;
     font-size: 10px;
 }
 .footer-h3{
     margin: 0px;
-    font-size: 20px;
+   
 }
 .footer credit {
     text-align: center;
 }
 .visa{
-    margin-top:30px ;
+    margin-top:5px ;
     font-size: 15px;
-    border: solid 1px red;
+    margin-bottom: 8px;
+    color: blue;
 }
 .compra{
     display: block;
-    margin: 15px;
+    margin-bottom: 8px;
     font-size: 15px;
+    color: blue;
 }
 .seguridad{
     display: block;
-    margin: 15px;
+    margin-bottom: 8px;
     font-size: 15px;
+    color: blue;
+}
+.copy-right{
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 
 /* Medias Queries*/
 @media(min-width:361px)  {
     .article-border{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);/* aca le estoy dando un sombreado al article*/
     }
 .hamburger-button{
     display: none;
@@ -228,6 +249,35 @@ h3{
   .logo{
       font-size: 200px;
   }
+ .descripcion{
+     transform:translateY(-40px);
+     z-index: -1;
+     opacity: 0;
+ }
+
+.article-border:hover .descripcion{
+    transform:translateY(10px) ;
+    z-index: 1;
+    opacity: 1;
+    
+}
+.article-border{
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);/* el efecto de sombra esta oculto*/
+    transition: box-shadow 0.5s /* es para que el cambio de la fila 266 no se de forma abrusca*/
+}
+.article-border:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);/* el efecto de sobra se activa cuando paso el mouse al article*/
+}
+main section div i{
+    transform: rotate(0deg);/* situacion original*/
+}
+main section div i:hover{ /* aca lo roto en -90 grados*/
+transform: rotate(-90deg);
+}
+main section div i{/* la rotacion se da de forma pausada*/
+    transition: transform 0.5s;
+}
+
     }
 
 @media(min-width:1024px) {
@@ -242,5 +292,42 @@ h3{
     }
     .barra{
         margin-left: 30px;
+        font-size: 30px;
+    }
+    .search-bar-bar{
+        min-width: 200px;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        height: 130px;
+    }
+    .visa{
+        font-size: 30px;
+        color: blue;
+    }
+    .visa:hover{
+       color:yellowgreen;
+    }
+    .visa{
+        transition: transform 0.5s;
+    }
+    .compra{
+        font-size: 30px;
+        transition: transform 5s;
+        color: blue;
+    }
+    .compra:hover{
+        color: yellowgreen;
+    }
+    .seguridad{
+        font-size: 30px;
+        color: blue;
+    }
+    .seguridad:hover{
+        color: yellowgreen;
+    }
+    .copy-right{
+        text-align: start;
     }
 }

@@ -9,7 +9,7 @@ app.use(express.static(publicPath))
 
 
 app.listen(3000, () => {
-    console.log("Servidor Corriendo en el puerto 3030")
+    console.log("Servidor Corriendo en el puerto 3000")
 });
 
 app.get("/",(req,res)=>{
