@@ -8,7 +8,7 @@ const publicPath = path.join(__dirname,"./public");// aca ya tengo la ruta publi
 app.use(express.static(publicPath))
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor Corriendo en el puerto 3000")
 });
 

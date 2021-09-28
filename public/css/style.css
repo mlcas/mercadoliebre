@@ -24,7 +24,7 @@ body{
 }
 .barra{
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 .search-bar-bar{
     min-width: 150px;
