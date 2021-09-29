@@ -277,6 +277,12 @@ transform: rotate(-90deg);
 main section div i{/* la rotacion se da de forma pausada*/
     transition: transform 0.5s;
 }
+.footer-conteint{
+    position: fixed;
+    bottom: 0px;
+    width: 100% /*el position absolute no deja que el footer tomo todo el ancho por eso le doy el 100%*/;
+
+}
 
 
     }
