@@ -197,13 +197,8 @@ background-color: #0022AA;
     .article-border{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);/* aca le estoy dando un sombreado al article*/
     }
-.hamburger-button{
-    display: none;
-}
-.main-navbar{
-    display: block; /* me trar la barra de navegacion que la habia ocultado mas arriba*/
-    margin-bottom: 10px;
-}
+
+
 
 }
 
@@ -214,6 +209,9 @@ background-color: #0022AA;
     }
     .barra{
         text-align: center;
+    }
+    .hamburger-button{
+        display: none;
     }
     .search-bar-bar{
         font-size: 10px;
